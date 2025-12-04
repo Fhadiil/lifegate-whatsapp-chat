@@ -24,8 +24,6 @@ def whatsapp_webhook(request):
 
         # LOGIC CHANGE HERE:
         if created:
-            # If it's a new session, do NOT save 'body' (it was likely just "Hi").
-            # Set the welcome message prefix.
             message_prefix = "Welcome to Lifegate AI Triage. Let's get some details to help you.\n\n"
         else:
             # Only save the answer if it's an ongoing conversation
